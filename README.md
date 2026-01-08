@@ -1,2 +1,2 @@
-# vensie.github.io
+# Vensie.github.io
 Portfolio Website for Seth Berroa!
