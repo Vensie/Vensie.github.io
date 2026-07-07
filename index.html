@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Seth Berroa | Software Engineer</title>
   <meta name="description" content="Seth Berroa is a software engineer building full-stack and backend systems." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -13,6 +14,7 @@
       <a class="brand" href="#top">Seth Berroa</a>
       <nav class="nav-links" aria-label="Primary">
         <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -51,6 +53,12 @@
         </div>
 
         <aside class="hero-card" aria-label="Profile summary">
+          <div class="portrait-frame" aria-hidden="true">
+            <div class="portrait-placeholder">
+              <span>Photo</span>
+              <small>Headshot here</small>
+            </div>
+          </div>
           <p class="card-label">Currently focused on</p>
           <h2>Backend systems, product quality, and clean execution.</h2>
           <ul class="card-list">
@@ -69,12 +77,31 @@
 
         <div class="project-grid">
           <article class="project">
-            <div class="project-meta">Full-stack platform</div>
-            <h3>ITAC Assessment Platform</h3>
+            <div class="project-header">
+              <div>
+                <div class="project-meta">Full-stack platform</div>
+                <h3>ITAC Assessment Platform</h3>
+              </div>
+              <div class="project-highlight">21K+ assessments</div>
+            </div>
             <p>
               Full-stack system supporting 21,000+ industrial assessments for researchers
               and federal partners.
             </p>
+            <div class="project-notes">
+              <div>
+                <span>Scope</span>
+                <strong>Authentication, sync, workflow tooling</strong>
+              </div>
+              <div>
+                <span>Stack</span>
+                <strong>SQL, Firebase, full-stack app logic</strong>
+              </div>
+              <div>
+                <span>Impact</span>
+                <strong>Used in research and partner-facing operations</strong>
+              </div>
+            </div>
             <ul>
               <li>Built authentication and real-time sync</li>
               <li>Designed SQL + Firebase backend</li>
@@ -83,16 +110,61 @@
           </article>
 
           <article class="project">
-            <div class="project-meta">Systems project</div>
-            <h3>RU Hungry</h3>
+            <div class="project-header">
+              <div>
+                <div class="project-meta">Systems project</div>
+                <h3>RU Hungry</h3>
+              </div>
+              <div class="project-highlight">Data structures</div>
+            </div>
             <p>
               Restaurant management simulation using core data structures and operational logic.
             </p>
+            <div class="project-notes">
+              <div>
+                <span>Scope</span>
+                <strong>Restaurant simulation and transaction flow</strong>
+              </div>
+              <div>
+                <span>Stack</span>
+                <strong>Java, linked lists, queues, hash tables</strong>
+              </div>
+              <div>
+                <span>Impact</span>
+                <strong>Demonstrates systems thinking and runtime discipline</strong>
+              </div>
+            </div>
             <ul>
               <li>Hash tables, linked lists, queues</li>
               <li>Transaction and inventory tracking</li>
               <li>Designed for predictable runtime behavior</li>
             </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>A compact stack that shows what I actually ship with.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Languages</h3>
+            <p>Java, JavaScript, SQL, Python</p>
+          </article>
+          <article class="skill-card">
+            <h3>Frontend</h3>
+            <p>HTML, CSS, responsive UI, accessibility</p>
+          </article>
+          <article class="skill-card">
+            <h3>Backend</h3>
+            <p>APIs, auth flows, data modeling, Firebase</p>
+          </article>
+          <article class="skill-card">
+            <h3>Tools</h3>
+            <p>Git, SQL, debugging, documentation</p>
           </article>
         </div>
       </section>

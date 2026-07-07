@@ -232,6 +232,43 @@ a {
     radial-gradient(circle at top right, rgba(139, 92, 246, 0.25), transparent 45%);
 }
 
+.portrait-frame {
+  display: grid;
+  place-items: center;
+  margin-bottom: 18px;
+}
+
+.portrait-placeholder {
+  width: min(100%, 240px);
+  aspect-ratio: 1 / 1;
+  border-radius: 28px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  background:
+    radial-gradient(circle at 30% 20%, rgba(139, 92, 246, 0.35), transparent 28%),
+    radial-gradient(circle at 70% 75%, rgba(34, 197, 94, 0.18), transparent 30%),
+    linear-gradient(180deg, rgba(15, 23, 42, 0.96), rgba(8, 15, 28, 0.98));
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 20px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.portrait-placeholder span {
+  display: block;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.portrait-placeholder small {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .card-label,
 .project-meta {
   margin: 0;
@@ -242,10 +279,82 @@ a {
   text-transform: uppercase;
 }
 
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: start;
+}
+
+.project-highlight {
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(139, 92, 246, 0.28);
+  background: rgba(139, 92, 246, 0.12);
+  color: #e9d5ff;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.76rem;
+  white-space: nowrap;
+}
+
 .hero-card h2 {
   margin: 14px 0 18px;
   font-size: clamp(1.6rem, 3vw, 2.4rem);
   line-height: 1.12;
+}
+
+.project-notes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.project-notes div {
+  padding: 14px;
+  border-radius: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  background: rgba(2, 6, 23, 0.35);
+}
+
+.project-notes span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.project-notes strong {
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.skill-card {
+  padding: 22px;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.84), rgba(8, 15, 28, 0.95));
+  box-shadow: var(--shadow);
+}
+
+.skill-card h3 {
+  margin: 0 0 10px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.1rem;
+}
+
+.skill-card p {
+  margin: 0;
+  color: #d1d9e8;
 }
 
 .card-list,
@@ -344,6 +453,8 @@ a {
   .split-section,
   .contact-section,
   .stats,
+  .skills-grid,
+  .project-notes,
   .section-heading {
     grid-template-columns: 1fr;
     display: grid;
@@ -361,6 +472,10 @@ a {
 
   .stats {
     grid-template-columns: 1fr;
+  }
+
+  .project-header {
+    flex-direction: column;
   }
 }
 
@@ -380,6 +495,10 @@ a {
   .experience-card,
   .contact-card {
     border-radius: 22px;
+  }
+
+  .portrait-placeholder {
+    max-width: 200px;
   }
 
   .hero h1 {
