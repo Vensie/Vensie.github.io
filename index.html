@@ -4,58 +4,128 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Seth Berroa | Software Engineer</title>
+  <meta name="description" content="Seth Berroa is a software engineer building full-stack and backend systems." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#top">Seth Berroa</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <header class="hero">
-    <h1>Seth Berroa</h1>
-    <p>Computer Science Senior @ Rutgers</p>
-    <p class="subtitle">
-      I build full-stack and backend systems used in real-world environments.
-    </p>
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Computer Science Senior at Rutgers</p>
+          <h1>Clean, reliable software for teams that care about craft.</h1>
+          <p class="subtitle">
+            I build full-stack and backend systems that handle real users, real data,
+            and real operational constraints.
+          </p>
 
-    <div class="buttons">
-      <a href="#projects">Projects</a>
-      <a href="https://github.com/vensie" target="_blank">GitHub</a>
-      <a href="assets/Seth_Berroa_Resume.pdf" target="_blank">Resume</a>
-    </div>
-  </header>
+          <div class="buttons">
+            <a class="button button-primary" href="#projects">View Projects</a>
+            <a class="button button-secondary" href="https://github.com/vensie" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button button-secondary" href="assets/Seth_Berroa_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+          </div>
 
-  <section id="projects">
-    <h2>Projects</h2>
+          <div class="stats" aria-label="Highlights">
+            <div>
+              <strong>21K+</strong>
+              <span>industrial assessments supported</span>
+            </div>
+            <div>
+              <strong>Full-stack</strong>
+              <span>backend, auth, and data workflows</span>
+            </div>
+            <div>
+              <strong>Product-minded</strong>
+              <span>focused on clarity and execution</span>
+            </div>
+          </div>
+        </div>
 
-    <div class="project">
-      <h3>ITAC Assessment Platform</h3>
-      <p>
-        Full-stack system supporting 21,000+ industrial assessments.
-      </p>
-      <ul>
-        <li>Built authentication and real-time sync</li>
-        <li>Designed SQL + Firebase backend</li>
-        <li>Used by researchers and federal partners</li>
-      </ul>
-    </div>
+        <aside class="hero-card" aria-label="Profile summary">
+          <p class="card-label">Currently focused on</p>
+          <h2>Backend systems, product quality, and clean execution.</h2>
+          <ul class="card-list">
+            <li>Full-stack application design</li>
+            <li>SQL and Firebase-backed workflows</li>
+            <li>Developer-friendly UI and UX</li>
+          </ul>
+        </aside>
+      </section>
 
-    <div class="project">
-      <h3>RU Hungry</h3>
-      <p>
-        Restaurant management simulation using core data structures.
-      </p>
-      <ul>
-        <li>Hash tables, linked lists, queues</li>
-        <li>Transaction + inventory tracking</li>
-      </ul>
-    </div>
-  </section>
+      <section id="projects" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Projects built for real use, not just demos.</h2>
+        </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>
-      📧 <a href="mailto:sethberroa@gmail.com">sethberroa@gmail.com</a><br />
-      🔗 <a href="https://www.linkedin.com/in/sethberroa/" target="_blank">LinkedIn</a>
-    </p>
-  </section>
+        <div class="project-grid">
+          <article class="project">
+            <div class="project-meta">Full-stack platform</div>
+            <h3>ITAC Assessment Platform</h3>
+            <p>
+              Full-stack system supporting 21,000+ industrial assessments for researchers
+              and federal partners.
+            </p>
+            <ul>
+              <li>Built authentication and real-time sync</li>
+              <li>Designed SQL + Firebase backend</li>
+              <li>Shipped workflow tooling used in production</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <div class="project-meta">Systems project</div>
+            <h3>RU Hungry</h3>
+            <p>
+              Restaurant management simulation using core data structures and operational logic.
+            </p>
+            <ul>
+              <li>Hash tables, linked lists, queues</li>
+              <li>Transaction and inventory tracking</li>
+              <li>Designed for predictable runtime behavior</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section split-section">
+        <div>
+          <p class="eyebrow">Experience</p>
+          <h2>Comfortable moving between user-facing polish and backend correctness.</h2>
+        </div>
+
+        <div class="experience-card">
+          <h3>What I bring</h3>
+          <ul>
+            <li>Strong fundamentals in data structures and systems</li>
+            <li>Practical experience with authentication and data synchronization</li>
+            <li>Attention to readable interfaces and maintainable code</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Open to software engineering roles and interesting product problems.</h2>
+        </div>
+
+        <div class="contact-card">
+          <a href="mailto:sethberroa@gmail.com">sethberroa@gmail.com</a>
+          <a href="https://www.linkedin.com/in/sethberroa/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+  </div>
 
 </body>
 </html>
